@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+    font-size: larger;
+}
+
+body {
+    background-color: antiquewhite;
+    scroll-behavior: smooth;
+}
+
+/* template formatting */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.grid-item {
+    grid-column: 2;
+}
+
+/* Navigation Menu */
+#menu {
+    height: auto;
+    position: fixed;
+    top: center;
+    right: 0;
+    width: 200px;
+    /* color: black; */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    display: block;
+    padding: 20px;
+    background-color: transparent;
+}
+#menu li:hover {
+    background-color: gray;
+}
+#menu li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Section styling */
+#about {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#team ul{
+    display: inline-block;
+}
+#team ul li a{
+    text-decoration: solid;
+}
