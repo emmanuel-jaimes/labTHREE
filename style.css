@@ -15,6 +15,7 @@ body {
 }
 .grid-item {
     grid-column: 2;
+    display: grid;
 }
 
 /* Navigation Menu */

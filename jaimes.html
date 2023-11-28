@@ -1,5 +1,8 @@
 <head> 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,10 +21,77 @@
         <div class="grid-container">
             <div class="grid-item">
                 <!-- add embedded figure -->
+                <img src="img/IMG_3480.jpeg" alt="jaimes-img" style="max-width:35%;">
                 <section id="about">
-                    <h1>Emmanuel Jaimes</h1>
-                    <p>The quick brown fox jumped over the fence</p>
+                    <h1>Welcome,</h1>
+                    <p>My name is Emmanuel Jaimes and I am currently studying Computer Science 
+                        & Engineering at the University of Iowa. I have enjoyed my time at Iowa 
+                        these last years and look forward for what is to come. 
+                    </p>
+                    <h3>A little bit about me...</h3>
+                    <p>Born and raised in Dallas, Texas I came to Iowa to experience what it is like to really have snow... and it truly 
+                        is an "experience". When I am not in class, I find myself dabbling in a good amount of activities ranging from 
+                        playing futbol, losing in chess, engaging in photography, and even learning some mixology. If there is something 
+                        that I am interested in doing, I'll do it. </p>
+                    <h4>Some of my favorite hobbies...</h4>
+                    <ul id="hobbies-list">
+                        <li>Programming</li>
+                        <li>Graphic Design</li>
+                        <li>Coffee</li>
+                        <li>Photography</li>
+                        <li>Sports</li>
+                        <li>Music</li>
+                        <li>Driving</li>
+                        <li>Geography</li>
+                    </ul>
                 </section>
+                
+                <section id="experience">
+
+                    
+                    <h1>Experience</h1>
+                    <p>At my time at Iowa I have had unique opportunities that have expanded my skillsets
+                        while also being able to apply what I have learned throughout my collegiate carreer.
+                        I am honored to share with you the oppurtunities I have taken below. </p>
+                    <ul id="experience-list">
+                        <li>
+                          <h3>Product Engineer</h3>
+                          <h4>John Deere</h4>
+                          <h5>Dubuque, IA</h5>
+                          <p>▪ Integrated and developed GUI testing for Obstacle Intelligence project assignments using Python <br></p>
+                          <p>▪ Worked on Client-Server Rest API using Java to ensure proper calls and responses behaved and functioned
+                            as intended <br></p>
+                          <p>▪ Communicated and worked with team members daily to meet deadlines efficiently and effectively while
+                            learning production and development workflow <br></p>
+                          <p> ▪ Asked questions frequently to build and strengthen understanding of new concepts and environments <br></p>
+                        </li>
+                        <li>
+                          <h3>IT Support Student</h3>
+                          <h4>College of Public Health, U. Iowa</h4>
+                          <h5>Iowa City, IA</h5>
+                          <p>• Provided IT support for all faculty, students, and staff of the College of Public Health Building in a
+                            comprehensive and timely manner </p>
+                          <p>• Effectively communicate via phone, email, or physically to every request and understand issues to provide
+                              support and find solutions to every case</p>
+                          <p>• Manage and log equipment in a database to keep organization structure and management of the building
+                              for easy collaborative work with team members</p>
+                          <p>• Learn valuable administrative systems and processes in daily operations when managing 
+                            network assets and devices</p>
+                        </li>
+                    </ul>
+                    <h4>Feel free to connect!</h4>
+                    <a href="#linkedin"></a> 
+                        <img class="linkedInButton"
+                          src="img/LI-In-Bug.png"
+                          onclick="window.open('https://www.linkedin.com/in/jaimes-emmanuel', '_blank')">
+                    
+                </section>
+            </div>
+            <div class="grid-item">
+                <div id="mcbroken">
+                    <h1>But is the ice cream machine working near you? </h1>
+                    <embed src="http://www.mcbroken.com" style="width:1000px; height: 600px;">
+                </div>
             </div>
             <div class="grid-item">
                 <section id="comment">
@@ -37,8 +107,38 @@
 
 <!-- individual styling -->
 <style>
+    /*  */
     body {
-        /* background-color: blue; */
+        font-family: 'Roboto', sans-serif;
+    }
+
+    main {
+        padding-top: 5%;
+    }
+
+    .grid-item img {
+        justify-self: center;
+    }
+
+    #about h1 {
+        letter-spacing: 10px;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    #hobbies-list li{
+        display: inline-block;
+        background-color: aliceblue;
+        padding: 1em;
+         border-radius: 10px;
+    }
+
+    .linkedInButton {
+        height: 64px;
+    }
+
+    #mcbroken {
+        justify-self: center;
     }
 </style>
 
