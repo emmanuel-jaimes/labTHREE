@@ -4,6 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Team 5</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,6 +28,7 @@
         <!-- TEMPLATE FORMATTING -->
         <div class="grid-container">
             <div class="grid-item">
+                <h1>Projects</h1>
                 <ul id="projects-list">
                     <section id="lab1">
                         <li>
@@ -61,7 +65,7 @@
                         <li>
                             <img src="" alt="">
                             <h1>Final Project</h1>
-                            <h3>Title</h3>
+                            <h3>XR Extended Reality Room Racer</h3>
                             <p>info</p>
                         </li>
                     </section>
@@ -79,21 +83,37 @@
 </body>
 
 <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+    }
 
+    main {
+        padding-top: 5%;
+    }
     .grid-item img {
         justify-self: center;
         justify-content: center;
     }
 
+    .grid-item section {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
     #projects-list li {
-        padding-top: 5%;
+        padding: 5% 8% 1% 8%;
         list-style-type: none;
         display: grid;
-        background-color: aliceblue;
+        background-color: #C4CAD0;
+        border: #878C8F solid;
         align-items: center;
-        /* text-align: center; */
+        text-align: center;
         max-width: 75%;
+        border-radius: 10px;
     }
+
+    
 
     
 </style>

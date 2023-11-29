@@ -4,8 +4,10 @@ html {
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: #FCF7FF;
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 /* template formatting */
@@ -15,7 +17,13 @@ body {
 }
 .grid-item {
     grid-column: 2;
+    justify-content: center;
     display: grid;
+}
+
+#home {
+    justify-content: center;
+    display: flex;
 }
 
 /* Navigation Menu */
@@ -48,15 +56,7 @@ body {
     text-transform: uppercase;
 }
 
-/* Section styling */
-#about {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
 
-#team ul{
-    display: inline-block;
-}
-#team ul li a{
-    text-decoration: solid;
-}
+
+
+
