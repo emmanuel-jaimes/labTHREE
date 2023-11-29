@@ -1,0 +1,99 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team 5</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION MENU -->
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jaimes.html">Emmanuel</a></li>
+                    <li><a href="risty.html">Sebastion</a></li>
+                    <li><a href="suter.html">Brendan</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TEMPLATE FORMATTING -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <ul id="projects-list">
+                    <section id="lab1">
+                        <li>
+                            <img src="img/lab1_product.png" alt="lab1_product" style="max-width: 50%;" >
+                            <h1>Lab 1</h1>
+                            <h3>Temperature Sensor</h3>
+                            <p> For our first lab, we implemented a digital thermometer with both stand-
+                                alone and internet-connected functionality along with an application that displays
+                                the temperature history of the device.</p>
+                        </li>
+                    </section>
+
+                    <section id="lab2">
+                        <li>
+                            <img src="img/lab2_product.png" alt="lab2_product" style="max-width: 50%;">
+                            <h1>Lab 2</h1>
+                            <h3>Infrared Receiver</h3>
+                            <p>For our second lab, we built a robust receiver to work with as many different ambient
+                                light sources as possible. e.g., fluorescent lamps, and even when
+                                exposed to infrared LEDs and sends SMS alerts to specified phone number whenever
+                                signal is interrupted.</p>
+                        </li>
+                    </section>
+
+                    <section id="lab3">
+                        <li>
+                            <h1>Lab 3</h1>
+                            <h3>Team Portfolio</h3>
+                            <p>We hope the website has been a pleasant experience. Feel free to leave comments (: </p>
+                        </li>
+                    </section>
+
+                    <section id="final-project">
+                        <li>
+                            <img src="" alt="">
+                            <h1>Final Project</h1>
+                            <h3>Title</h3>
+                            <p>info</p>
+                        </li>
+                    </section>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <section id="comment">
+                    <div class="commentbox"></div>
+                    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                    <script>commentBox('5684944231727104-proj')</script>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+<style>
+
+    .grid-item img {
+        justify-self: center;
+        justify-content: center;
+    }
+
+    #projects-list li {
+        padding-top: 5%;
+        list-style-type: none;
+        display: grid;
+        background-color: aliceblue;
+        align-items: center;
+        /* text-align: center; */
+        max-width: 75%;
+    }
+
+    
+</style>
