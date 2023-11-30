@@ -28,14 +28,20 @@
         const app = firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
 
-        // Listener for user's authentication state
+        // Redirect if not signed in
         firebase.auth().onAuthStateChanged((user) => {
             if (!user) {
-                // User is not signed in. Redirect to login page
+                // User is not signed in, redirect to login page
                 window.location.href = 'login.html';
             } else {
                 // User is signed in
                 console.log("User is signed in");
+            }
+        });
+
+        auth.onAuthStateChanged(user => {
+            if (!user) {
+                window.location.href = 'login.html';
             }
         });
     </script>
