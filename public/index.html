@@ -1,157 +1,121 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Team 0x05</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-</head>
-
-<!-- Minimum Requirements
-    1. public hosting (5pts) - github 
-    2. public homepage for the team (3pts) - yes
-    3. members individual portfolio page - in progress
-        + embedded figure - media (2pts)
-        + layout & content (2pts)
-    4. User login function (default user/pass: ECE4880 / 2023FallLab3!) - tbd
-        + user account registration (4pts)
-        + user login/logout to see private pages (4pts)
-    5. comment feature on each individuals portfolio (5pts) -> yes
-    6. UI/UX Design (1-11pts)    -->
-
-<body>
-    <header>
-        <!-- NAVIGATION MENU -->
-        <nav>
-            <div id="menu">
-                <ul>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="jaimes.html">Emmanuel</a></li>
-                    <li><a href="risty.html">Sebastian</a></li>
-                    <li><a href="suter.html">Brendan</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- TEMPLATE FORMATTING -->
-        <div class="grid-container">
-            <div class="grid-item">
-                <section id="home">
-                    <img id="pentacrest" src="img/pentacrest.jpg" alt="pentacrest" style="max-width: 500px;">
-                </section>
-
-                <section id="about">
-                    <h1>Welcome, this is Team 0x05</h1>
-                    <p>This website was created by Emmanuel Jaimes, Sebastian Risty, and Brendan Suter in 
-                        University of Iowa's Senior Design during fall of 2023. We are excited to share with 
-                        you our journey through ECE:4880 and what there is to come.
-                    </p>
-                </section>
-
-                <section id="team">
-                    <h1>Meet the team</h1>
-                    <ul id="risty">
-                        <!-- add media -->
-                        <li><a href="risty.html">Sebastian Risty</a></li>
-                    </ul>
-                    <ul id="suter">
-                        <!-- add media -->
-                        <li><a href="suter.html">Brendan Suter</a></li>
-                    </ul>
-                    <ul id="jaimes" >
-                        <!-- add media -->
-                        <li><a href="jaimes.html">Emmanuel Jaimes</a></li>
-                    </ul>
-                </section>
-
-                <section id="projects">
-                    <h1>Projects</h1>
-                    <p>Check out our projects!</p>
-                    <ul>
-                        <li><a href="projects.html">PROJECTS</a></li>
-                    </ul>
-                </section>
-            </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel = "stylesheet" href = "main.css">
+    </head>
+    <body>
+    <div class = "login-container">
+        <div id= "main">
+            <h1>Sign In</h1>
+            <input id = "email" type = "text" placeholder = "Email"></input>
+            <input id = "password" type = "password" placeholder = "Password"></input>
+            <button id = "submit">Submit</button>
+            <p><span>or</span></p>
+            <button id = "sign-up">Sign Up</button>
         </div>
-    </main>
+        <div id = "create-acct">
+            <h1>Create an Account</h1>
+            <input id = "email-signup" type = "text" placeholder = "Email *"></input>
+            <input id = "confirm-email-signup" type = "email" placeholder = "Confirm Email *"></input>
+            <input id = "password-signup" type = "password" placeholder = "Password *"></input>
+            <input id = "confirm-password-signup" type = "password" placeholder = "Confirm Password *"></input>
+            <button id = "create-acct-btn">Create Account</button>
+            <button id = "return-btn">Return to Login</button>
+        </div>
+    </div>
+    </body>
+</html>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyAH9I4sTWl6eTf_DcHQwJG98E6N1VVTAt8",
-          authDomain: "seniordesign-5c156.firebaseapp.com",
-          databaseURL: "https://seniordesign-5c156-default-rtdb.firebaseio.com",
-          projectId: "seniordesign-5c156",
-          storageBucket: "seniordesign-5c156.appspot.com",
-          messagingSenderId: "47607103394",
-          appId: "1:47607103394:web:573778608fb2aaf4b03cfb",
-          measurementId: "G-1XQNS365JS"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-</body>
+<script type = "module" src = "script.js"></script>
+
 <style>
-    .grid-item section {
-        text-align: center;
-        padding-top: 2%;
-        padding-bottom: 2%;
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
     }
     
-    /* Section styling */
-    #about {
-        text-wrap: balance;
+    body {
+      background-color: #0583D2;
     }
-
-    #team ul{
-        display: inline-block;
-        background-color: #A4969B;
-        list-style-type: none;
-        padding: 5%;
+    
+    h1 {
+      margin-bottom: 8%;
+      text-align: center;
+      font-family: "Fredoka One", cursive;
+      color: #0583D2;
+      letter-spacing: 0.1em;
     }
-    #tean li {
-        padding: 2%;
-        list-style-type: none;
+    
+    p {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
     }
-    #team a{
-        text-decoration: none;
-        color: #FCF7FF;
-        /* padding: 5%; */
-        text-align: center;
+    
+    p span {
+      background:#fff;
+      padding:0 10px;
     }
-    #team ul:hover {
-        background-color: #655560;
+    
+    input {
+      margin-bottom: 3%;
     }
-
-    #projects li{
-        list-style-type: none;
-        text-align: center;
-        
+    
+    input:last-of-type {
+      margin-bottom: 0;
     }
-    #projects ul {
-        display: inline-block;
-        background-color: #C4CAD0;
-        padding: 2%;
+    
+    input, button {
+      padding: 3%;
+      width: 100%;
     }
-    #projects ul:hover {
-        background-color: #878C8F;
+    
+    .login-container {
+      background-color: white;
+      padding: 7%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      /* horizontal align */
+      width: 40vw;
+      margin-left: 30vw;
+      /* vertical align */
+      height: 70vh;
+      margin-top: 15vh;
     }
-    #projects a {
-        text-decoration: none;
-        color: #655560;
-        font-weight: bold;
+    
+    #submit, #create-acct-btn {
+      background-color: #0583D2;
+      color: white;
+      border: none;
+      margin-top: 5%;
     }
-</style>
+    
+    button:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+    
+    #sign-up {
+      border: none;
+    }
+    
+    #create-acct {
+      display: none;
+    }
+    
+    #return-btn {
+      background: none;
+      color: grey;
+      text-decoration: underline;
+      border: none;
+      margin-top: 3%;
+    }
+    </style>
