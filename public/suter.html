@@ -26,8 +26,68 @@
                 <!-- add embedded figure -->
                 <section id="about">
                     <h1>Brendan Suter</h1>
-                    <p>The quick brown fox jumped over the fence</p>
+                    <p>Hello! My name is Brendan Suter and I'm a Computer Science and Engineering Major
+                        at the University of Iowa. I've come to enjoy my time at the University and
+                        can't wait to see what the future has in store.
+                    </p>
+                    <h2>About Me</h2>
+                    <p>I grew up not 30 minutes north of campus in Cedar Rapids, Iowa. Being so close meant
+                        that I knew I wanted to be a Hawkeye for as long as I can remember. I spent much of
+                        my life as a home-body and would find myself learning everything I could about history,
+                        culture, faith, and more. I would be lying if I said that took up most of my time however,
+                        as I could rarely go a day without playing Minecraft. When High School arrived, that began to
+                        change. I would spend most of my time involved with Cross-Country, Track, Marching Band, Show Choir
+                        Band, and more. Now, my free time is spent on many of my hobbies.
+                    </p>
+                    <h3>Personal Hobbies</h3>
+                    <ul id="hobbies-list">
+                        <li>Ultimate Frisbee</li>
+                        <li>Electric Guitar</li>
+                        <li>Long-Distance Running</li>
+                        <li>Football</li>
+                        <li>History</li>
+                        <li>Gaming</li>
+                        <li>Aviation</li>
+                    </ul>
                 </section>
+
+                <section id="experience">
+                    <h1>Skills and Coding Experience</h1>
+                    <p>Throughout my time at the University of Iowa, I've learned many different types of tools and languages.
+                        These various environment taught me vital skills that I'm sure to apply after graduation. These range from
+                        simple concepts like polymorphism to complex topics like concurrency and MVC architecture. I've learned in 
+                        Python, C++, Java, Ruby, Haskell, Assembly, and more. Yet, they've produced project I'm quite proud of.
+                        Here are some of my favorites,
+                    </p>
+                    <ul id="projects">
+                        <li>Kings Corners (Python)</li>
+                        <li>2D Racing Game (C++)</li>
+                        <li>College Football Ranking Generator and Odds Predictor(Java)</li>
+                        <li>Electoral College Editor (Java)</li>
+                        <li>RFID Test Center Scanner (Embedded C)</li>
+                        <li>Secure Wireless Temperature Sensor (Embedded C++ & Java)</li>
+                        <li>Online Ecommerce Website (Ruby)</li>
+                    </ul>
+                    <h2>Internship Opportunity</h2>
+                    <p>My education at Iowa gave me the opportunity to work an internship over summer 2023. I ended up working for 
+                        Genova Technologies in Cedar Rapids, and I enjoyed my time there. Genova was contracting to John Deere at the
+                        time to provide embedded software engineering solutions to their latest line of combines. My team, the Green Reapers,
+                        was tasked with implementing new functionality to grain headers and I spent a lot of time immersed in their Agile-based 
+                        system. Bench Testing, Code Reviews, Writing Tests, were all important experiences I intent to bring into my professional
+                        career. Yet, my favorite experience was my trip to Silvis where I got to spend my day with the combines for testing.
+                        Those machines are a lot bigger up close. Overall, it was quite a positive experience and I look forward to starting a 
+                        career doing much of the same work.
+                    </p>
+                    <h4>Please Reach Out!</h4>
+                    <a href="#linkedin"></a> 
+                        <img class="linkedInButton"
+                          src="img/LI-In-Bug.png"
+                          onclick="window.open('https://www.linkedin.com/in/brendan-suter-b75043236/', '_blank')">
+
+                </section>
+
+
+
             </div>
             <div class="grid-item">
                 <section id="comment">
@@ -39,12 +99,47 @@
         
         
     </main>
+    <script src="path_to_your_javascript_file.js"></script>
+    <script>
+    protectPage();
+    </script>
     
 </body>
 
 <!-- individual styling -->
 <style>
     body {
-        /* background-color: blue; */
+        background-color: lightgray;
+        font-family: 'Arial';
+    }
+    main {
+        padding-top: 5%;
+    }
+
+    .grid-item img {
+        justify-self: center;
+    }
+
+    #about h1 {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    #about h2 {
+        font-weight: bold;
+    }
+    #about h3 {
+        font-weight: bold;
+    }
+
+    #hobbies-list li{
+        display: block;
+        background-color: #FFCD00;
+        padding: 0.5em;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .linkedInButton {
+        height: 64px;
     }
 </style>
