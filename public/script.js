@@ -89,8 +89,9 @@ const firebaseConfig = {
         // Signed in
         const user = userCredential.user;
         console.log("Success! Welcome back!");
-        window.alert("Success! Welcome back!");
-        // ...
+        //window.alert("Success! Welcome back!");
+        
+        window.location.href = 'home.html';  // redir to home page
       })
       .catch((error) => {
         const errorCode = error.code;
