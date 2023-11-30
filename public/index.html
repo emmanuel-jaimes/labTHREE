@@ -11,7 +11,7 @@
       <input id = "email" type = "text" placeholder = "Email"></input>
       <input id = "password" type = "password" placeholder = "Password"></input>
       <button id = "submit">Submit</button>
-      <p><span>or</span></p>
+      <p><span></span></p>
       <button id = "sign-up">Sign Up</button>
     </div>
 
@@ -29,7 +29,6 @@
 </body>
 </html>
 
-
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
     
@@ -37,18 +36,18 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
     
     body {
-      background-color: #0583D2;
+      background-color: #1e2124;
     }
     
     h1 {
       margin-bottom: 8%;
       text-align: center;
-      font-family: "Fredoka One", cursive;
-      color: #0583D2;
+      font-family: "Verdana";
+      color: rgb(114,137,218);
       letter-spacing: 0.1em;
     }
     
@@ -57,30 +56,33 @@
       margin-bottom: 5%;
       width: 100%;
       text-align: center;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #7289da;
       line-height: 0.1em;
     }
     
     p span {
-      background:#fff;
+      background:#282b3000;
       padding:0 10px;
     }
     
     input {
       margin-bottom: 3%;
+      border-radius: 10px;
     }
     
     input:last-of-type {
       margin-bottom: 0;
+      border-radius: 10px;
     }
     
     input, button {
       padding: 3%;
       width: 100%;
+      border-radius: 10px;
     }
     
     .login-container {
-      background-color: white;
+      background-color: rgb(40,43,48);
       padding: 7%;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       /* horizontal align */
@@ -92,10 +94,11 @@
     }
     
     #submit, #create-acct-btn {
-      background-color: #0583D2;
+      background-color: #7289da;
       color: white;
       border: none;
       margin-top: 5%;
+      border-radius: 10px;
     }
     
     button:hover {
@@ -106,15 +109,17 @@
     
     #sign-up {
       border: none;
+      border-radius: 10px;
     }
     
     #create-acct {
       display: none;
+      border-radius: 10px;
     }
     
     #return-btn {
       background: none;
-      color: grey;
+      color: rgb(114,137,218);
       text-decoration: underline;
       border: none;
       margin-top: 3%;

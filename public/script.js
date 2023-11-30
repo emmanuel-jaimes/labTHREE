@@ -120,3 +120,21 @@ returnBtn.addEventListener("click", function() {
     main.style.display = "block";
     createacct.style.display = "none";
 });
+
+function checkUserAuthentication() {
+  return new Promise((resolve, reject) => {
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        resolve(user); // User is signed in
+      } else {
+        reject("No user signed in"); // No user is signed in
+      }
+    });
+  });
+}
+
+function protectPage() {
+  checkUserAuthentication().catch(() => {
+    window.location.href = 'index.html'; // Redirect to sign-in page
+  });
+}
