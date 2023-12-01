@@ -1,127 +1,126 @@
+<!-- startup.html -->
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Login</title>
-  <link rel = "stylesheet" href = "style.css">
-</head>
-<body>
-  <div class = "login-container">
-    <div id= "main">
-      <h1>Sign In</h1>
-      <input id = "email" type = "text" placeholder = "Email"></input>
-      <input id = "password" type = "password" placeholder = "Password"></input>
-      <button id = "submit">Submit</button>
-      <p><span></span></p>
-      <button id = "sign-up">Sign Up</button>
-    </div>
+<html lang="en">
 
-    <div id = "create-acct">
-      <h1>Create an Account</h1>
-      <input id = "email-signup" type = "text" placeholder = "Email *"></input>
-  <input id = "confirm-email-signup" type = "email" placeholder = "Confirm Email *"></input>
-      <input id = "password-signup" type = "password" placeholder = "Password *"></input>
-      <input id = "confirm-password-signup" type = "password" placeholder = "Confirm Password *"></input>
-      <button id = "create-acct-btn">Create Account</button>
-      <button id = "return-btn">Return to Login</button>
-    </div>
-  </div>
-  <script type = "module" src = "script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Startup Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION MENU -->
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="signin.html">Emmanuel</a></li>
+                    <li><a href="signin.html">Sebastian</a></li>
+                    <li><a href="signin.html">Brendan</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TEMPLATE FORMATTING -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <section id="home">
+                    <img id="pentacrest" src="img/pentacrest.jpg" alt="pentacrest" style="max-width: 500px;">
+                </section>
+
+                <section id="about">
+                    <h1>Welcome to our Startup Page</h1>
+                    <p>This page is a starting point to navigate to different sections of our website.</p>
+                </section>
+
+                <section id="team">
+                    <h1>Meet the team</h1>
+                    <ul id="risty">
+                        <li><a href="signin.html">Sebastian Risty</a></li>
+                    </ul>
+                    <ul id="suter">
+                        <li><a href="signin.html">Brendan Suter</a></li>
+                    </ul>
+                    <ul id="jaimes">
+                        <li><a href="signin.html">Emmanuel Jaimes</a></li>
+                    </ul>
+                </section>
+
+                <section id="projects">
+                    <h1>Projects</h1>
+                    <p>Check out our projects!</p>
+                    <ul>
+                        <li><a href="signin.html">PROJECTS</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
 </body>
-</html>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-    
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
+    .grid-item section {
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
-    
-    body {
-      background-color: #1e2124;
+
+    /* Section styling */
+    #about {
+        text-wrap: balance;
     }
-    
-    h1 {
-      margin-bottom: 8%;
-      text-align: center;
-      font-family: "Verdana";
-      color: rgb(114,137,218);
-      letter-spacing: 0.1em;
+
+    #team ul {
+        display: inline-block;
+        background-color: #A4969B;
+        list-style-type: none;
+        padding: 5%;
     }
-    
-    p {
-      margin-top: 5%;
-      margin-bottom: 5%;
-      width: 100%;
-      text-align: center;
-      border-bottom: 1px solid #7289da;
-      line-height: 0.1em;
+
+    #tean li {
+        padding: 2%;
+        list-style-type: none;
     }
-    
-    p span {
-      background:#282b3000;
-      padding:0 10px;
+
+    #team a {
+        text-decoration: none;
+        color: #FCF7FF;
+        text-align: center;
     }
-    
-    input {
-      margin-bottom: 3%;
-      border-radius: 10px;
+
+    #team ul:hover {
+        background-color: #655560;
     }
-    
-    input:last-of-type {
-      margin-bottom: 0;
-      border-radius: 10px;
+
+    #projects li {
+        list-style-type: none;
+        text-align: center;
     }
-    
-    input, button {
-      padding: 3%;
-      width: 100%;
-      border-radius: 10px;
+
+    #projects ul {
+        display: inline-block;
+        background-color: #C4CAD0;
+        padding: 2%;
     }
-    
-    .login-container {
-      background-color: rgb(40,43,48);
-      padding: 7%;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      /* horizontal align */
-      width: 40vw;
-      margin-left: 30vw;
-      /* vertical align */
-      height: 70vh;
-      margin-top: 15vh;
+
+    #projects ul:hover {
+        background-color: #878C8F;
     }
-    
-    #submit, #create-acct-btn {
-      background-color: #7289da;
-      color: white;
-      border: none;
-      margin-top: 5%;
-      border-radius: 10px;
+
+    #projects a {
+        text-decoration: none;
+        color: #655560;
+        font-weight: bold;
     }
-    
-    button:hover {
-      cursor: pointer;
-      opacity: 0.8;
-      transition: 0.3s;
-    }
-    
-    #sign-up {
-      border: none;
-      border-radius: 10px;
-    }
-    
-    #create-acct {
-      display: none;
-      border-radius: 10px;
-    }
-    
-    #return-btn {
-      background: none;
-      color: rgb(114,137,218);
-      text-decoration: underline;
-      border: none;
-      margin-top: 3%;
-    }
-    </style>
+</style>
+
+</html>
