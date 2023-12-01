@@ -1,0 +1,126 @@
+<!-- startup.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Startup Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION MENU -->
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Sign In</a></li>
+                    <li><a href="index.html">Emmanuel</a></li>
+                    <li><a href="index.html">Sebastian</a></li>
+                    <li><a href="index.html">Brendan</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TEMPLATE FORMATTING -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <section id="home">
+                    <img id="pentacrest" src="img/pentacrest.jpg" alt="pentacrest" style="max-width: 500px;">
+                </section>
+
+                <section id="about">
+                    <h1>Welcome to our Startup Page</h1>
+                    <p>This page is a starting point to navigate to different sections of our website.</p>
+                </section>
+
+                <section id="team">
+                    <h1>Meet the team</h1>
+                    <ul id="risty">
+                        <li><a href="index.html">Sebastian Risty</a></li>
+                    </ul>
+                    <ul id="suter">
+                        <li><a href="index.html">Brendan Suter</a></li>
+                    </ul>
+                    <ul id="jaimes">
+                        <li><a href="index.html">Emmanuel Jaimes</a></li>
+                    </ul>
+                </section>
+
+                <section id="projects">
+                    <h1>Projects</h1>
+                    <p>Check out our projects!</p>
+                    <ul>
+                        <li><a href="index.html">PROJECTS</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+<style>
+    .grid-item section {
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    /* Section styling */
+    #about {
+        text-wrap: balance;
+    }
+
+    #team ul {
+        display: inline-block;
+        background-color: #A4969B;
+        list-style-type: none;
+        padding: 5%;
+    }
+
+    #tean li {
+        padding: 2%;
+        list-style-type: none;
+    }
+
+    #team a {
+        text-decoration: none;
+        color: #FCF7FF;
+        text-align: center;
+    }
+
+    #team ul:hover {
+        background-color: #655560;
+    }
+
+    #projects li {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #projects ul {
+        display: inline-block;
+        background-color: #C4CAD0;
+        padding: 2%;
+    }
+
+    #projects ul:hover {
+        background-color: #878C8F;
+    }
+
+    #projects a {
+        text-decoration: none;
+        color: #655560;
+        font-weight: bold;
+    }
+</style>
+
+</html>
