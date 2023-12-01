@@ -15,7 +15,7 @@
     }
   ],
   "hosting": {
-    "public": "startup.html",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
